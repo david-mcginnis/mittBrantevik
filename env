@@ -1,0 +1,11 @@
+PROJECT=blinky-lite-v2
+ARCHIVETOPIC=blinky-lite-v2/+/+/reading
+MONGODBIP=mongodb+srv://blinky-lite:aaa@cluster0.bbb.mongodb.net/blinky-lite?retryWrites=true&w=majority
+MQTTCLIENTID=mittbrantevik-box-test
+MQTTSERVERIP=ccc
+MQTTUSERNAME=ddd
+MQTTPASSWORD=eee
+JWTKEYSECRET=fff
+MAXDBSIZE=450000000
+IPREFWEB=https://blinky-lite.io
+NODEREDCONFIGSECRET=ggg
