@@ -3150,7 +3150,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "// Global Javascript\n        useWebSockets(false);\n        let numberBrantePics = 1;\n\n        function onDocumentReady()\n        {\n\n            var picNum =  Math.floor(Math.random() * numberBrantePics) + 1;\n            if (picNum < 10)\n            {\n                $(\"#brantePic\").attr(\"src\",\"/img/brantevikPics/BrantePic0\" + picNum.toString() +\".jpg\");\n            }\n            else\n            {\n                $(\"#brantePic\").attr(\"src\",\"/img/brantevikPics/BrantePic\" + picNum.toString() +\".jpg\");\n            }\n\n            $('#headline').hide();\n            setTimeout(changeHeadline, 6000);\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n        function changeHeadline()\n        {\n            $('#longAgo').fadeOut(1000, fadeInNewHeadLine);\n\n        }\n        function fadeInNewHeadLine()\n        {\n            $('#headline').fadeIn(1000);\n        }\n        \n",
+        "template": "// Global Javascript\n        useWebSockets(false);\n        let numberBrantePics = 17;\n\n        function onDocumentReady()\n        {\n\n            var picNum =  Math.floor(Math.random() * numberBrantePics) + 1;\n            if (picNum < 10)\n            {\n                $(\"#brantePic\").attr(\"src\",\"/img/brantevikPics/BrantePic0\" + picNum.toString() +\".jpg\");\n            }\n            else\n            {\n                $(\"#brantePic\").attr(\"src\",\"/img/brantevikPics/BrantePic\" + picNum.toString() +\".jpg\");\n            }\n\n            $('#headline').hide();\n            setTimeout(changeHeadline, 6000);\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n        function changeHeadline()\n        {\n            $('#longAgo').fadeOut(1000, fadeInNewHeadLine);\n\n        }\n        function fadeInNewHeadLine()\n        {\n            $('#headline').fadeIn(1000);\n        }\n        \n",
         "output": "str",
         "x": 710,
         "y": 1140,
@@ -5495,7 +5495,7 @@
         "fieldType": "msg",
         "format": "html",
         "syntax": "mustache",
-        "template": "    <div width=\"100%\" align=\"center\">\n        <table width=\"900px\">\n            <tr >\n                <td  width=\"100%\" style=\"padding-top:10px;\">\n                    <div class='card'>\n                        <div class='row'>\n                            <div class='col-md-12'>\n                                <table width=\"100%\">\n                                    <tr>\n                                        <td width=\"20%\" align=\"left\" style=\"padding-left:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a class=\"btn back-button\" href='/restaurants'>tillbaka</a>\n                                        </td>\n                                        <td width=\"60%\" align=\"center\">\n                                            <span  class='card-title'>Hörnan på Brantevik</span>\n                                        </td>\n                                        <td width=\"20%\" align=\"right\" style=\"padding-right:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a href='/'><img src=\"/img/home.png\" height=\"70px\"/></a>\n                                        </td>\n                                   </tr>\n                                </table>\n                             </div>\n                        </div>\n                        <div class='card-body' align=\"center\">\n                            <table width=\"100%\" align=\"center\">\n                                <tr >\n                                    <td  width=\"100%\" align=\"center\">\n                                        <div style=\"width: 850px; height: 1200px; overflow:hidden; max-height:1200px;\">\n                                            <iframe src=\"https://www.hornanpabrantevik.com/hnder-p-hrnan\"  frameborder=\"0\" width=\"850\" height=\"1200\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </table>\n                        </div>\n                    </div>\n                </td>\n            </tr>\n        </table>\n    </div>\n{{{payload.mailfooter}}}\n",
+        "template": "    <div width=\"100%\" align=\"center\">\n        <table width=\"900px\">\n            <tr >\n                <td  width=\"100%\" style=\"padding-top:10px;\">\n                    <div class='card'>\n                        <div class='row'>\n                            <div class='col-md-12'>\n                                <table width=\"100%\">\n                                    <tr>\n                                        <td width=\"20%\" align=\"left\" style=\"padding-left:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a class=\"btn back-button\" href='/restaurants'>tillbaka</a>\n                                        </td>\n                                        <td width=\"60%\" align=\"center\">\n                                            <span  class='card-title'>Hörnan på Brantevik</span>\n                                        </td>\n                                        <td width=\"20%\" align=\"right\" style=\"padding-right:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a href='/'><img src=\"/img/home.png\" height=\"70px\"/></a>\n                                        </td>\n                                   </tr>\n                                </table>\n                             </div>\n                        </div>\n                        <div class='card-body' align=\"center\">\n                            <table width=\"100%\" align=\"center\">\n                                <tr >\n                                    <td  width=\"100%\" align=\"center\">\n                                        <div id=\"headline\" style=\"width: 800px; height: 1200px; overflow:hidden; max-height:1200px;\">\n                                            <img src=\"https://docs.google.com/drawings/d/e/2PACX-1vQhGYYquPw-wP84lAvV-Oc0_2EKHQLBz49-EOq-nRAB8W1jAjUbAKSWMICuOTGzwBxpyddLR0vRAOze/pub?w=800&amp;h=600\">\n                                        </div>\n                                        <div id=\"website\" style=\"width: 850px; height: 1200px; overflow:hidden; max-height:1200px;\">\n                                            <iframe src=\"https://www.hornanpabrantevik.com/hnder-p-hrnan\"  frameborder=\"0\" width=\"850\" height=\"1200\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </table>\n                        </div>\n                    </div>\n                </td>\n            </tr>\n        </table>\n    </div>\n{{{payload.mailfooter}}}\n",
         "output": "str",
         "x": 1130,
         "y": 2520,
@@ -5533,7 +5533,7 @@
         "fieldType": "msg",
         "format": "javascript",
         "syntax": "mustache",
-        "template": "// Global Javascript\n        useWebSockets(false);\n\n        function onDocumentReady()\n        {\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n",
+        "template": "// Global Javascript\n        useWebSockets(false);\n\n        function onDocumentReady()\n        {\n            $('#website').hide();\n            setTimeout(changeHeadline, 6000);\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n        function changeHeadline()\n        {\n            $('#headline').fadeOut(1000, fadeInNewHeadLine);\n\n        }\n        function fadeInNewHeadLine()\n        {\n            $('#website').fadeIn(1000);\n        }\n",
         "output": "str",
         "x": 710,
         "y": 2520,
@@ -5610,133 +5610,6 @@
         "wires": [
             [
                 "7dd80ee6bec9e0d6"
-            ]
-        ]
-    },
-    {
-        "id": "9712066e4324de90",
-        "type": "template",
-        "z": "2b074b3a.632fb4",
-        "name": "body",
-        "field": "payload.body",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "    <div width=\"100%\" align=\"center\">\n        <table width=\"900px\">\n            <tr >\n                <td  width=\"100%\" style=\"padding-top:10px;\">\n                    <div class='card'>\n                        <div class='row'>\n                            <div class='col-md-12'>\n                                <table width=\"100%\">\n                                    <tr>\n                                        <td width=\"20%\" align=\"left\" style=\"padding-left:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a class=\"btn back-button\" href='/restaurants'>tillbaka</a>\n                                        </td>\n                                        <td width=\"60%\" align=\"center\">\n                                            <span  class='card-title'>Hörnan på Brantevik</span>\n                                        </td>\n                                        <td width=\"20%\" align=\"right\" style=\"padding-right:20px;padding-top:10px;padding-bottom:10px;\">\n                                            <a href='/'><img src=\"/img/home.png\" height=\"70px\"/></a>\n                                        </td>\n                                   </tr>\n                                </table>\n                             </div>\n                        </div>\n                        <div class='card-body' align=\"center\">\n                            <table width=\"100%\" align=\"center\">\n                                <tr >\n                                    <td  width=\"100%\" align=\"center\">\n                                        <div style=\"width: 850px; height: 1200px; overflow:hidden; max-height:1200px;\">\n                                            <iframe src=\"https://www.hornanpabrantevik.com/hnder-p-hrnan\"  frameborder=\"0\" width=\"850\" height=\"1200\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </table>\n                        </div>\n                    </div>\n                </td>\n            </tr>\n        </table>\n    </div>\n{{{payload.mailfooter}}}\n",
-        "output": "str",
-        "x": 1130,
-        "y": 2600,
-        "wires": [
-            [
-                "f4a2305a9e296853"
-            ]
-        ]
-    },
-    {
-        "id": "8c2bb1c427ac45ea",
-        "type": "template",
-        "z": "2b074b3a.632fb4",
-        "name": "javascript",
-        "field": "payload.javascript",
-        "fieldType": "msg",
-        "format": "javascript",
-        "syntax": "mustache",
-        "template": "{{{payload.script.global}}}\n",
-        "output": "str",
-        "x": 860,
-        "y": 2600,
-        "wires": [
-            [
-                "91f2547743e277da"
-            ]
-        ]
-    },
-    {
-        "id": "4646854789a77ed2",
-        "type": "template",
-        "z": "2b074b3a.632fb4",
-        "name": "script.global",
-        "field": "payload.script.global",
-        "fieldType": "msg",
-        "format": "javascript",
-        "syntax": "mustache",
-        "template": "// Global Javascript\n        useWebSockets(false);\n\n        function onDocumentReady()\n        {\n        }\n        function onWebSocketOpen()\n        {\n        }\n        function onWebSocketClose()\n        {\n            \n        }\n        function onWebSocketMessage(msg)\n        {\n        }\n",
-        "output": "str",
-        "x": 710,
-        "y": 2600,
-        "wires": [
-            [
-                "8c2bb1c427ac45ea"
-            ]
-        ]
-    },
-    {
-        "id": "08867a3c0593cfe5",
-        "type": "template",
-        "z": "2b074b3a.632fb4",
-        "name": "Set Title",
-        "field": "payload.title",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "Hörnan på Brantevik",
-        "output": "str",
-        "x": 560,
-        "y": 2600,
-        "wires": [
-            [
-                "4646854789a77ed2"
-            ]
-        ]
-    },
-    {
-        "id": "e228f3affa8a01e7",
-        "type": "http in",
-        "z": "2b074b3a.632fb4",
-        "name": "/restaurants/hornans",
-        "url": "/restaurants/hornans",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 130,
-        "y": 2600,
-        "wires": [
-            [
-                "ac61d606497b4872"
-            ]
-        ]
-    },
-    {
-        "id": "f4a2305a9e296853",
-        "type": "subflow:d7162906.0afcd8",
-        "z": "2b074b3a.632fb4",
-        "name": "",
-        "x": 1270,
-        "y": 2600,
-        "wires": []
-    },
-    {
-        "id": "91f2547743e277da",
-        "type": "subflow:698c1306.31662c",
-        "z": "2b074b3a.632fb4",
-        "x": 1000,
-        "y": 2600,
-        "wires": [
-            [
-                "9712066e4324de90"
-            ]
-        ]
-    },
-    {
-        "id": "ac61d606497b4872",
-        "type": "subflow:3fec913b325ae6ff",
-        "z": "2b074b3a.632fb4",
-        "name": "",
-        "x": 360,
-        "y": 2600,
-        "wires": [
-            [
-                "08867a3c0593cfe5"
             ]
         ]
     },
